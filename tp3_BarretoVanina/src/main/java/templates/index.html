@@ -2,85 +2,178 @@
 <html lang=es>
 <head>
 	<meta charset="UTF-8">
-	<title>Programacion Visual</title>
+	<title>UNJu - FI</title>
 </head>
 <body>
     <header>
-        <h1>Programacion Visual</h1>
+        <img src="C:\Users\Hola\Pictures\Unju.jpg" alt="Descripción de la Imagen">
+        <h1>Facultad de Ingenieria</h1>
         <nav>
-            <a href="#seccion1">Profesores</a>
+            <a href="#seccion1">Catedra</a>
             <a href="#seccion2">Programa</a>
-            <a href="#seccion3">Contenido</a>
+            <a href="#seccion3">Aula</a>
         </nav>
     </header>
 
     <main>
         <section id="seccion1">
-            <h2>Profesores de la materia</h2>
-            <h3>Subtítulo de la Sección 1</h3>
-            <p>Programacion Visual, materia de segundo año de la carrera Analista programador universitario</p>
+            <h2>Programacion Visual</h2>
+            <h3>Carrera: Analista Programador Universitario.</h3>
+            <p>Responsable de la catedra:</p>
+            <ul><li>	Mg. Ing. Ariel Alejandro Vega</li></ul>
+			<p>Equipo de catedra:</p>
             <ul>
-                <li>Ariel Alejandro Vega</li>
-                <li>Gustavo Sosa</li>
-                <li>Carolina Apaza</li>
-                <li>Juan Carlos Rodriguez</li>
+				<li>	Prof. Adj. Ded. Simple Mg. Ing. Gustavo Sosa</li>
+				<li>	JTP Ded. Simple: Ing. Carolina Apaza</li>
+				<li>	Ayu. Primera Ded. Simple Juan Carlos Rodriguez</li>
             </ul>
-            <table>
+            <p>Modalidad de cursado: Virtual</p>
+            <p>Año en el plan de estudios: Segundo año</p>
+        </section>
+
+        <section id="seccion2">
+            <h2>Programa de catedra</h2>
+            <h3>Plan de estudios: 2008</h3>
+            <p>Carga horaria semanal 6 horas.</p>
+            <p>Carga horaria total 90 horas.</p>
+             <table>
                 <thead>
                     <tr>
-                        <th>Encabezado 1</th>
-                        <th>Encabezado 2</th>
+                        <th>Unidad</th>
+                        <th>Contenido</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Dato 1</td>
-                        <td>Dato 2</td>
+                        <td>Unidad 1 Lenguaje Java</td>
+                        <td>
+                        	<ul>
+                        		<li>Tipos de datos primitivos y complejos.</li>
+                        		<li>Estructura de datos.</li>
+                        		<li>Operadores uso de Strings.</li>
+                        		<li>Arreglos y Colecciones</li>
+                        		<li>Conceptos Generales de la programacion orientada a objetos</li>
+                        		<li>Clases y objetos: Definición y Ejemplos.</li>
+                        	</ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Dato 3</td>
-                        <td>Dato 4</td>
+                        <td>Unidad 2 Introduccion a Spring Boot</td>
+                        <td>
+                        	<ul>
+                        		<li>Arquitectura de aplicaciones Web.</li>
+								<li>Herramientas necesarias.</li>
+								<li>¿Qué es un Framework?</li>
+								<li>Evolución de Spring.</li>
+								<li>Módulos disponibles.</li>
+								<li>Arquitectura de una aplicación con Spring.</li>
+								<li>Creación de proyectos con Spring Boot en un IDE.</li>
+								<li>Concepto de Controladores.</li>
+								<li>Gestión de peticiones con RequestMapping.</li>
+								<li>Introducción a HTML.</li>
+								<li>Estructura de un documento HTML.</li>
+								<li>Introducción a CCS.</li>
+								<li>Creación de un sitio Web HTML.</li>
+                        	</ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 3 Gestion de Dependencias y Versionamiento</td>
+                        <td>
+                        	<ul>
+                        		<li>Gestión de Proyectos mediante un sistema de control de versionamiento.</li>
+								<li>Git: tareas deversionamiento con Git.</li>
+								<li>Integración de Git con un IDE.</li>
+								<li>Maven: descripción y utilidad.</li>
+								<li>Descripción de la estructura de un proyecto Maven.</li>
+								<li>Gestión de dependencias, repositorio Maven.</li>
+								<li>Uso de arquetipos Maven.</li>
+								<li>Spring boot y Maven.</li>
+                        	</ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 4 Apring Boot MVC</td>
+                        <td>
+                        	<ul>
+                        		<li>Thymeleaf como motor de templates.</li>
+                        		<li>Creación de un proyecto MVC con Spring Boot y thymeleaf.</li>
+                        		<li>Configuración de propiedades mediante el fichero properties o yml.</li>
+                        		<li>Introducción a Bootstrap: concepto e implementación de componentes. </li>
+                        		<li>Navbar.</li>
+                        		<li>Grillas con Bootstrap.</li>
+                        		<li>Cards.</li>
+                        		<li>Buttons.</li>
+                        		<li>Breadscrumb.</li>
+                        	</ul>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>Unidad 5 Clases de negocio</td>
+                        <td>
+                        	<ul>
+                        		<li>Creación de clases de negocio.</li>
+                        		<li>Clases de Servicio.</li>
+                        		<li>Concepto de Inyección de dependencias.</li>
+                        		<li>Vinculación entre clases de negocio con Servicios.</li>
+                        		<li>Agregar objetos al modelo (Model).</li>
+                        		<li>Renderizado de la UI con Thymeleaf.</li>
+                        	</ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 6 Persistencia de objetos</td>
+                        <td>
+                        	<ul>
+                        		<li>Conceptos básicos de persistencia de Objetos.</li>
+                        		<li>Introducción a JPA.</li>
+                        		<li>Conexión a un Motor de Base de Datos.</li>
+                        		<li>Configuración de JPA con Spring Boot.</li>
+                        		<li>CrudRepository, JpaRepository, Query Methods, Relaciones.</li>
+								<li>Sistema de trazas: configuración con Spring Boot.</li>
+                        	</ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 7 Manejo de formularios</td>
+                        <td>
+                        	<ul>
+								<li>Gestión de eventos.</li>
+								<li>Búsquedas.</li>
+								<li>CRUD de clases de negocio.</li>
+								<li>Operaciones de negocio.</li>
+								<li>Uso de @Query para consultas personalizadas.</li>
+								<li>Integración con componentes Bootstrap y thymeleaf.</li>
+								<li>Integración de conceptos en una aplicación robusta.</li>
+                        	</ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="seccion2">
-            <h2>Programa de la materia</h2>
-            <h3>Subtítulo de la Sección 2</h3>
-            <p>Carga horaria semanal 6 horas.</p>
-            <p>Carga horaria total 90 horas.</p>
-            <ol>
-                <li>Unidad 1 Lenguaje Java</li>
-                <li>Unidad 2 Introduccion a Spring Boot</li>
-                <li>Unidad 3 Gestion de Dependencias y Versionamiento</li>
-                <li>Unidad 4 Apring Boot MVC</li>
-                <li>Unidad 5 Clases de negocio</li>
-                <li>Unidad 6 PErsistencia de objetos</li>
-                <li>Unidad 7 Manejo de formularios</li>
-            </ol>
-        </section>
-
-        <section id="seccion3">
-            <h2>Aula virtual</h2>
-            <h3>Subtítulo de la Sección 3</h3>
-            <p>Párrafo de texto de la Sección 3.</p>
-            <img src="ruta/a/imagen.jpg" alt="Descripción de la Imagen">
-        </section>
+		<section id="seccion3">
+			<h2>Aula virtual</h2>
+			<h3>Aula de la catedra</h3>
+			<p>La facultad proporciona un aula virtual para la catedra</p>
+			<p>En el siguiente enlace encontrara el material teorico y practico, videos y mucho mas para la cusrsada de la catedra</p>
+			<a href= "https://virtual.unju.edu.ar/course/view.php?id=2540"> Click para visitar el aula de la catedra</a>
+		</section>
 
         <aside>
             <h3>Contenido Adicional</h3>
-            <p>Párrafo de texto del Contenido Adicional.</p>
-            <a href="#">Enlace Adicional</a>
-            <img src="ruta/a/imagen.jpg" alt="Descripción de la Imagen">
+            <img src="C:\Users\Hola\Pictures\Visual\Java.jpg" alt="Descripción de la Imagen">
+            <p>Los siguientes les seran necesarios para la cursada.</p>
+            <a href="https://spring.io/tools/">Spring Tools</a>
+            <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html"> Java Oracle</a>
+            
         </aside>
     </main>
 
     <footer>
-        <p>Contacto: correo@example.com</p>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
+		<p>Contacto: 41786611@fi.unju.edu.ar</p>
+		<a href="VaniiHal">Facebook</a>
+		<a href="VaniiHal">Instagram</a>
     </footer>
 </body>
 </html>
