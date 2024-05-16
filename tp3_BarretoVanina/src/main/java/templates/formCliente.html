@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Trabajo Practico N°3</title>
+		<link rel="Stylesheet" href="/css/styles.css"> </link>
+	</head>
+	<body>
+		<header id="header">
+        <h1>Programacion Visual</h1>
+        <nav>
+            <a href="#seccion1">Catedra</a>
+            <a href="#seccion2">Programa</a>
+            <a href="#seccion3">Aula</a>
+        </nav>
+   	 </header>
+   	 <main>
+   	 	<h1>Formulario de datos</h1>
+   	 	<form>
+   	 		<label for=dni>DNI:</label>
+   	 		<input id="dni" type=number required placeholder="Ingrese DNI en numero sin puntos"></input><br> 
+   	 		
+   	 		<label for="apellido">APELLIDO/S:</label>
+   	 		<input id="apellido" type=text required placeholder="Ingrese Apellidos"></input> <br>
+   	 		<label for="nombre">NOMBRE/S:</label>
+   	 		<input id="nombre" type=text required placeholder="Ingrese Nombres"></input> <br>
+   	 		<label for="nacimiento">FECHA DE NACIMIENTO:</label>
+   	 		<input id="nacimiento" type=date required placeholder="Ingrese FEcha de nacimeinto"></input> <br>
+   	 		<div>
+	   	 		<label for="generoM">Masculino</label>
+	   	 		<input id="generoM" type=radio value="Masculino" name="genero"></input> <br>
+	   	 		<label for="generoF">Femenino</label>
+	   	 		<input id="generoF" type=radio value="Femenino" name="genero"></input> <br>
+	   	 		<label for="generoX">X</label>
+	   	 		<input id="generoX" type=radio value="X" name="genero"></input> <br>
+   	 		</div>
+   	 		<label for="correo">Correo</label>
+	   	 	<input id="correo" type="email" required placeholder="Ingrese correo electronico" name="correo"></input> <br>
+   	 		<label for="domicilio">Domicilio</label>
+	   	 	<input id="domicilio" type="text" required placeholder="Ingrese el domicilio" name="domicilio"></input> <br>
+   	 		<label for="provincia">Provincia</label>
+   	 		<select id="provincia" name="provincia">
+   	 			<option value="Jujuy">Jujuy</option>
+   	 			<option value="Salta" selected>Salta</option>
+   	 			<option value="Tucuman">Tucuman</option>
+ 
+   	 		</select> <br>
+   	 		<label for=celular>Celular:</label>
+   	 		<input id="celular" type=number required placeholder="Ingrese celular"></input><br>
+   	 		
+   	 		<label>Categoria de interes:</label>
+   	 		<div>
+   	 			<label for="interesP"> Patinaje</label>
+   	 			<input id="interesP" type=checkbox name="interes"></input><br>
+   	 			<label for="interesG">Gastronomia</label>
+   	 			<input id="interesG" type=checkbox name="interes"></input><br>
+   	 			<label for="interesT">Turismo</label>
+   	 			<input id="interesT+" type=checkbox name="interes"></input><br>
+   	 		</div> <br>
+   	 		<label for="sugerencias">Sugerencias:</label>
+   	 		<textarea id="sugerencias" placeholder="Ingrese comentarios" name="sugerencias" rows="4" cols="40"></textarea> <br>
+			<label for="contraseña">Contraseña</label>
+	   	 	<input id="contraseña" type="text" required placeholder="Ingrese la contraseña" name="contraseña" maxlength="16" minlength="8"></input> <br>
+	   	 	<label for="contraseñanueva">Contraseña Nuevamente</label>
+	   	 	<input id="contraseñanueva" type="text" required placeholder="Ingrese contraseña nuevamente" name="contraseñanueva"></input> <br>
+	   	 	
+   	 		<input type="submit" value ="Guardar"></input> <br>
+   	 		<input type="button" value ="Cancelar"></input> <br>
+   	 	</form>
+   	 </main>
+   	 footer
+	</body>
+</html>
