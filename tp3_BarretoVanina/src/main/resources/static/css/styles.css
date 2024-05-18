@@ -1,13 +1,99 @@
 @charset "UTF-8";
-footer{
-	background-color:rgb(183, 111, 255);
+#header{/*ENCABEZADO*/
+	background-color: #7E57C2;
+	color: white;
+	border:10px;
+	padding:30px 20px 30px 20px;
+	margin:5px;
 }
-#header{
-	background-color:rgb(64, 0, 128);
+.menu{/*MENU DE NAVEGACION*/
+	background-color: #9C27B0;
+	color: white;
 }
-.main{
-	background-color:rgb(128, 0, 255);
-	padding:50px;
-	border:30px;
-	margin:20px;
+.menu a{/*ENLACES A*/
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+.main{/*CONTENIDO PRINCIPAL*/
+	background-color: #673AB7;
+	color: white;
+	padding:10px 30px 30px 30px;
+	margin:5px;
+	border:10px;
+	flex:3;
+}
+.section{/*SECCIONES DEL CONTENIDO PRINCIPAL*/
+	margin-bottom: 20px;
+	border-radius: 4px;
+	padding: 10px;
+}
+#formulario{/*TITULO DE FORMULARIO H2*/
+	color: #673AB7;
+	background-color: #EDE7F6;
+	font-size: 30px;
+	margin-bottom: 10px; 
+}
+.section h2{/*TITULOS DE SECCION*/
+	color: #673AB7;
+	background-color: #EDE7F6;
+	font-size: 40px;
+	margin-bottom: 10px; 
+}
+.section h3{/*SUBTITULOS DE SECCION*/
+	font-size: 25px;
+	font-style: oblique;
+}
+.section p{/*PARRAFOS*/
+	font-size: 20px;
+}
+section a{/*ENLACES A DE SECCION*/
+	color:white;
+	font-size:18px;
+}
+th{/*ENCABEZADOS DE TABLAS*/
+	font-size: 20px;
+}
+td:nth-child(odd){
+	font-size: 20px;
+}
+.aside{/*CONTENIDO ADICIONAL*/
+	background-color: #AB47BC;
+	color: white;
+	flex:1;
+	padding:10px;
+	margin:5px;
+}
+.aside h3{
+	font-size: 25px;
+}
+.aside a{/*ENLACES A DEL CONTENIDO ADICIONAL*/
+	color: white;
+}
+.aside img{/*ENLACE IMG DEL CONTENIDO ADICIONAL*/
+	width:100px;
+	height:auto;
+}
+#pie-pagina{/*PIE DE PAGINA*/
+	background-color: #9C27B0;
+	color: white;
+	margin: 5px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.izquierda{/*PIE DE PAGINA DISTRIBUIDO IZQUIERDO*/
+	text-align: left;
+}
+.derecha{/*PIE DE PAGINA DISTRIBUIDO DERECHO*/
+	text-align: right;
+}
+.derecha img{/*IMAGEN DEL PIE DE PAGINA*/
+	width:150px;
+	height: auto;
+}
+.contenedor{
+	display:flex;
+	flex-direction:row;
+	width:100%;
 }

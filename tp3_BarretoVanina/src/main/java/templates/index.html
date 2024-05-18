@@ -2,37 +2,39 @@
 <html lang=es>
 <head>
 	<meta charset="UTF-8">
-	<title>UNJu - FI</title>
+	<title>Trabajo Práctico N°3</title>
 	<link rel="Stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header id="header">
-        <img src="C:\Users\Hola\git\TrabajoPractico3\tp3_BarretoVanina\src\main\resources\static\imagenes\Unju.jpg" alt="Descripción de la Imagen">
         <h1>Facultad de Ingenieria</h1>
-        <nav>
+        <nav class="menu">
+	        <a href="/inicio">Inicio</a>
             <a href="#seccion1">Catedra</a>
             <a href="#seccion2">Programa</a>
             <a href="#seccion3">Aula</a>
+            <a href="#adicional">Contenido Adicional</a>
+            <a href="/formulario">Formulario</a>
         </nav>
     </header>
-
+	<div class="contenedor">
     <main class="main">
-        <section id="seccion1">
+        <section id="seccion1" class="section">
             <h2>Programacion Visual</h2>
             <h3>Carrera: Analista Programador Universitario.</h3>
             <p>Responsable de la catedra:</p>
             <ul><li>	Mg. Ing. Ariel Alejandro Vega</li></ul>
 			<p>Equipo de catedra:</p>
-            <ul>
+            <ol>
 				<li>	Prof. Adj. Ded. Simple Mg. Ing. Gustavo Sosa</li>
 				<li>	JTP Ded. Simple: Ing. Carolina Apaza</li>
 				<li>	Ayu. Primera Ded. Simple Juan Carlos Rodriguez</li>
-            </ul>
+            </ol>
             <p>Modalidad de cursado: Virtual</p>
             <p>Año en el plan de estudios: Segundo año</p>
         </section>
 
-        <section id="seccion2">
+        <section id="seccion2" class="section">
             <h2>Programa de catedra</h2>
             <h3>Plan de estudios: 2008</h3>
             <p>Carga horaria semanal 6 horas.</p>
@@ -153,7 +155,7 @@
             </table>
         </section>
 
-		<section id="seccion3">
+		<section id="seccion3" class="section">
 			<h2>Aula virtual</h2>
 			<h3>Aula de la catedra</h3>
 			<p>La facultad proporciona un aula virtual para la catedra</p>
@@ -161,19 +163,24 @@
 			<a href= "https://virtual.unju.edu.ar/course/view.php?id=2540"> Click para visitar el aula de la catedra</a>
 		</section>
 
-        
     </main>
-	<aside>
+	<aside class="aside">
 		<h3>Contenido Adicional</h3>
-		<img src="C:\Users\Hola\git\TrabajoPractico3\tp3_BarretoVanina\src\main\resources\static\imagenes\Java.jpg" alt="Descripción de la Imagen">
+		<img src="/imagenes/Java.jpg" alt="Descripción de la Imagen">
 		<p>Los siguientes les seran necesarios para la cursada.</p>
-		<a href="https://spring.io/tools/">Spring Tools</a>
+		<a href="https://spring.io/tools/">Spring Tools</a> <br>
 		<a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html"> Java Oracle</a>
 	</aside>
-    <footer>
-		<p>Contacto: 41786611@fi.unju.edu.ar</p>
+	</div>
+    <footer id="pie-pagina">
+    <div class="izquierda">
+    	<p>Contacto: 41786611@fi.unju.edu.ar</p>
 		<a href="VaniiHal">Facebook</a>
 		<a href="VaniiHal">Instagram</a>
+    </div>
+    <div class="derecha">
+    	<img src="/imagenes/Unju.jpg" alt="Descripción de la Imagen">
+    </div>
     </footer>
 </body>
 </html>

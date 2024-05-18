@@ -3,34 +3,38 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Trabajo Practico N°3</title>
-		<link rel="Stylesheet" href="/css/styles.css"> </link>
+		<link rel="Stylesheet" href="/css/styles.css">
 	</head>
 	<body>
 		<header id="header">
-        <h1>Programacion Visual</h1>
-        <nav>
-            <a href="#seccion1">Catedra</a>
-            <a href="#seccion2">Programa</a>
-            <a href="#seccion3">Aula</a>
+        <h1>Progrmacion Visual</h1>
+        <nav class="menu">
+        	<a href="/inicio">Inicio</a>
+            <a href="/inicio#seccion1">Catedra</a>
+            <a href="/inicio#seccion2">Programa</a>
+            <a href="/inicio#seccion3">Aula</a>
+            <a href="/inicio#adicional">Contenido Adicional</a>
+            <a href="/formulario">Formulario</a>
         </nav>
    	 </header>
-   	 <main>
-   	 	<h1>Formulario de datos</h1>
+   	 <main class="main">
+   	 <h2 id=formulario>Formulario de Datos</h2>
    	 	<form>
    	 		<label for=dni>DNI:</label>
-   	 		<input id="dni" type=number required placeholder="Ingrese DNI en numero sin puntos"></input><br> 
+   	 		<input id="dni" type=number required placeholder="Ingrese DNI en numero sin puntos" name="dni"></input><br> 
    	 		
-   	 		<label for="apellido">APELLIDO/S:</label>
-   	 		<input id="apellido" type=text required placeholder="Ingrese Apellidos"></input> <br>
-   	 		<label for="nombre">NOMBRE/S:</label>
-   	 		<input id="nombre" type=text required placeholder="Ingrese Nombres"></input> <br>
-   	 		<label for="nacimiento">FECHA DE NACIMIENTO:</label>
-   	 		<input id="nacimiento" type=date required placeholder="Ingrese FEcha de nacimeinto"></input> <br>
+   	 		<label for="apellido">Apellido/s:</label>
+   	 		<input id="apellido" type=text required placeholder="Ingrese Apellidos" name="apellido"></input> <br>
+   	 		<label for="nombre">Nombre/s:</label>
+   	 		<input id="nombre" type=text required placeholder="Ingrese Nombres" name="nombre"></input> <br>
+   	 		<label for="nacimiento">Fecha de nacimiento:</label>
+   	 		<input id="nacimiento" type=date required placeholder="Ingrese Fecha de nacimeinto" name="nacimiento"></input> <br>
+   	 		<label>Genero:</label>
    	 		<div>
 	   	 		<label for="generoM">Masculino</label>
-	   	 		<input id="generoM" type=radio value="Masculino" name="genero"></input> <br>
+	   	 		<input id="generoM" type=radio value="Masculino" name="genero"></input>
 	   	 		<label for="generoF">Femenino</label>
-	   	 		<input id="generoF" type=radio value="Femenino" name="genero"></input> <br>
+	   	 		<input id="generoF" type=radio value="Femenino" name="genero"></input>
 	   	 		<label for="generoX">X</label>
 	   	 		<input id="generoX" type=radio value="X" name="genero"></input> <br>
    	 		</div>
@@ -39,16 +43,20 @@
    	 		<label for="domicilio">Domicilio</label>
 	   	 	<input id="domicilio" type="text" required placeholder="Ingrese el domicilio" name="domicilio"></input> <br>
    	 		<label for="provincia">Provincia</label>
-   	 		<select id="provincia" name="provincia">
+   	 		<select id="provincia" name="provincia" required>
    	 			<option value="Jujuy">Jujuy</option>
    	 			<option value="Salta" selected>Salta</option>
    	 			<option value="Tucuman">Tucuman</option>
- 
+   	 			<option value="Chaco">Chaco</option>
+   	 			<option value="Misiones">Misiones</option>
+   	 			<option value="Corrientes">Corrientes</option>
+   	 			<option value="Santiago del Estero">Santiago del Estero</option>
+   	 			<option value="Cordoba">Cordoba</option>
    	 		</select> <br>
    	 		<label for=celular>Celular:</label>
-   	 		<input id="celular" type=number required placeholder="Ingrese celular"></input><br>
+   	 		<input id="celular" type=number placeholder="Ingrese celular" name="celular"></input><br>
    	 		
-   	 		<label>Categoria de interes:</label>
+   	 		<label>Categoria de intereses:</label>
    	 		<div>
    	 			<label for="interesP"> Patinaje</label>
    	 			<input id="interesP" type=checkbox name="interes"></input><br>
@@ -58,16 +66,28 @@
    	 			<input id="interesT+" type=checkbox name="interes"></input><br>
    	 		</div> <br>
    	 		<label for="sugerencias">Sugerencias:</label>
-   	 		<textarea id="sugerencias" placeholder="Ingrese comentarios" name="sugerencias" rows="4" cols="40"></textarea> <br>
-			<label for="contraseña">Contraseña</label>
+   	 		<textarea id="sugerencias" placeholder="Ingrese comentarios" name="sugerencias" rows="4" cols="60"></textarea> <br>
+			<label for="contraseña">Contraseña:</label>
 	   	 	<input id="contraseña" type="text" required placeholder="Ingrese la contraseña" name="contraseña" maxlength="16" minlength="8"></input> <br>
-	   	 	<label for="contraseñanueva">Contraseña Nuevamente</label>
-	   	 	<input id="contraseñanueva" type="text" required placeholder="Ingrese contraseña nuevamente" name="contraseñanueva"></input> <br>
-	   	 	
-   	 		<input type="submit" value ="Guardar"></input> <br>
+	   	 	<label for="contraseñanueva">Confirmar contraseña</label>
+	   	 	<input id="contraseñanueva" type="text" required placeholder="Confirmar contraseña" name="contraseñanueva"></input> <br>
+			<label for=terminos>Acepto los terminos y condiciones</label>
+			<input id="terminos" type="checkbox" name="terminos" required></input> <br>
+			<label for="notificaciones">Acepto recibir informacion relativa a la empresa</label>
+			<input id="notificaciones" type="checkbox" name=notificaciones></input> <br> <br>
+			<input type="submit" value ="Guardar"></input>
    	 		<input type="button" value ="Cancelar"></input> <br>
    	 	</form>
    	 </main>
-   	 footer
+   	<footer id="pie-pagina">
+    <div class="izquierda">
+    	<p>Contacto: 41786611@fi.unju.edu.ar</p>
+		<a href="VaniiHal">Facebook</a>
+		<a href="VaniiHal">Instagram</a>
+    </div>
+    <div class="derecha">
+    	<img src="/imagenes/Unju.jpg" alt="Descripción de la Imagen">
+    </div>
+    </footer>
 	</body>
 </html>
